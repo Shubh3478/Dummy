@@ -52,7 +52,7 @@ naksh-jewels-assignment/
 ---
 
 ## Local Setup (Without Docker)
-
+---
 ### Frontend
 ```bash
 cd frontend
@@ -60,6 +60,7 @@ npm install
 npm start
 
 http://localhost:3000
+
 ---
 
 ### Frontend
