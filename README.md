@@ -61,7 +61,8 @@ npm start
 
 http://localhost:3000
 
-cd backend
+### Frontend
+```cd backend
 npm install
 node server.js
 
