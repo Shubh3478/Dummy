@@ -12,19 +12,8 @@ ReactJS & Node.js Internship Assessment.
 - Database: In-memory data
 - Containerization: Docker & Docker Compose
 
----
 
-## Project Structure
 
-naksh-jewels-assignment/
-├── frontend/
-│ ├── Dockerfile
-│ └── src/
-├── backend/
-│ ├── Dockerfile
-│ └── server.js
-├── docker-compose.yml
-└── README.md
 
 
 ---
@@ -52,46 +41,44 @@ naksh-jewels-assignment/
 ---
 
 ## Local Setup (Without Docker)
----
+
 ### Frontend
 ```bash
 cd frontend
 npm install
 npm start
+```
 
 http://localhost:3000
 
----
-
-### Frontend
-```cd backend
+### Backend
+```bash
+cd backend
 npm install
 node server.js
+```
 
 http://localhost:5000
 
-Docker Setup
-Prerequisites
+## Docker Setup
+---
+ ### Prerequisites
 
-Docker
+- Docker
+- Docker Compose
 
-Docker Compose
-
-Run Application
+### Run Application
+```bash
 docker-compose up --build
+```
+### Access Application
+- Frontend: http://localhost:3000
+- Backend: http://localhost:5000/products
 
-Access Application
+## Notes
 
-Frontend: http://localhost:3000
+- Separate Dockerfiles are used for frontend and backend.  
+- Docker Compose is used to run both services together.  
+- No third-party UI libraries are used.  
+- This project is created for internship assessment purposes only.
 
-Backend: http://localhost:5000/products
-
-Notes
-
-Separate Dockerfiles are used for frontend and backend.
-
-Docker Compose is used to run both services together.
-
-No third-party UI libraries are used.
-
-This project is created for internship assessment purposes only.
